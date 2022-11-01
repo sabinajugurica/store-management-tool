@@ -15,6 +15,19 @@ public class Product {
     private String name;
     private String description;
     private float price;
+
+    public Product(long id, String category, String brand, String name, String description, float price, float rating) {
+        this.id = id;
+        this.category = category;
+        this.brand = brand;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.rating = rating;
+    }
+
+    public Product(){}
+
     private float rating;
 
     public String getCategory() {

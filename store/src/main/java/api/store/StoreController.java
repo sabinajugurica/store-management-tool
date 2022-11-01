@@ -3,7 +3,6 @@ package api.store;
 import api.store.descriptions.Product;
 import api.store.services.StoreService;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -12,7 +11,7 @@ public class StoreController {
 
     private final StoreService storeService;
 
-    public StoreController(StoreService storeService) {
+    public StoreController(StoreService storeService){
         this.storeService = storeService;
     }
 
@@ -22,7 +21,7 @@ public class StoreController {
     }
 
     @GetMapping(path = "{id}")
-    public Product getProduct( @PathVariable  long id){
+    public Product getProduct( @PathVariable  long id) {
         return storeService.findProduct(id);
     }
 
@@ -33,7 +32,7 @@ public class StoreController {
 
     @PutMapping(path = "{id}/price/{newPrice}")
     public void changePrice(@PathVariable long id, @PathVariable float newPrice){
-        storeService.changePrice(id, newPrice);
+       storeService.changePrice(id, newPrice);
     }
 
     @PutMapping(path = "/category/{id}")
@@ -45,5 +44,4 @@ public class StoreController {
     public void deleteProduct(@PathVariable long id){
         storeService.deleteProduct(id);
     }
-
 }
