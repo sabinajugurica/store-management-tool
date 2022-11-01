@@ -1,4 +1,4 @@
-# Task: Store Management Tool 
+# Task: [Store Management Tool](https://github.com/sabinajugurica/store-management-tool) 
 
 ## Introduction
 
@@ -16,13 +16,13 @@ This project represents an API that acts as a store management tool.
 ## Architecture
 
 From architectural point of view, the app is a clasic API project. It has:
-- Controller - contains the structure for the main functionalities from the app 
-- Service - contains the logic of each functionality
+- [Controller](https://github.com/sabinajugurica/store-management-tool/blob/main/store/src/main/java/api/store/StoreController.java) - contains the structure for the main functionalities from the app 
+- [Service](https://github.com/sabinajugurica/store-management-tool/blob/main/store/src/main/java/api/store/services/StoreService.java) - contains the logic of each functionality
 
 In this project, I used JPA repository. Also, I used PostgreSQL for storing data. 
 All the functionalities were tested using Postman. 
 
-## JUnit tests
+## [JUnit tests](https://github.com/sabinajugurica/store-management-tool/blob/main/store/src/test/java/api/store/StoreApplicationTests.java)
 
 The tests are written for the StoreController class and they are covering the main functionalities. 
 
